@@ -1,0 +1,77 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# build dir
+build*
+old/
+
+# Java / KITE / Intellij
+out
+.idea
+logs
+*.iml
+target
+node_modules
+temp
+node
+*reports/
+localgrid
+package-lock.json
+.classpath
+.settings
+.project
+.DS_Store
+results
+/localGrid
+millicastqtclients.config.json
+CMakeLists.txt.user
+MillicastPlayer.config.json
+MillicastStudio.config.json
+
+.vs
+CMakeSettings.json
+
+# Doxygen (documentation)
+Doxyfile
+doxy
+
+# Android app
+src/androidapp/MillicastSDK/
+src/sdk/android/gen/
+
+external/QcodeEditor
+wtsdk_v2.3.2.aar
+*.xcworkspacedata
+src/SA-iOS-Swift/Millicast SDK Sample App in Swift/Millicast SDK Sample App in Swift/Uni
+
+millicast-sdk*
