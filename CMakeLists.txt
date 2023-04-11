@@ -50,12 +50,3 @@ set( _exe metadata-publisher )
 include( copy_dll_windows )
 
 add_subdirectory( src )
-
-#-------------------------------------------------
-# --- Install and Package
-#-------------------------------------------------
-
-include( GNUInstallDirs )
-
-add_subdirectory( install )
-add_subdirectory( packaging )
