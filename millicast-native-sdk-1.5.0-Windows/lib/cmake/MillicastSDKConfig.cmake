@@ -69,7 +69,7 @@ if( NOT MCSDK_USE_FILE_INCLUDED )
     set( MCSDK_NDI_FOUND FALSE )
   endif()
 
-  if( ON )
+  if( OFF )
     set( MCSDK_DECKLINK_FOUND TRUE )
   else()
     set( MCSDK_DECKLINK_FOUND FALSE )

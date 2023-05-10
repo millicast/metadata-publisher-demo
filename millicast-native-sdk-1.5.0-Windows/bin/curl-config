@@ -23,7 +23,7 @@
 #
 ###########################################################################
 
-prefix="C:/Program Files/millicast-native-sdk"
+prefix="D:/csmMillicastNativeSdk-108-Rel-H264-build/install_dir"
 exec_prefix=${prefix}
 includedir=${prefix}/include
 cppflag_curl_staticlib=
@@ -78,7 +78,7 @@ while test $# -gt 0; do
         ;;
 
     --cc)
-        echo "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64/x64/cl.exe"
+        echo "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/cl.exe"
         ;;
 
     --prefix)
@@ -157,13 +157,13 @@ while test $# -gt 0; do
         ;;
 
     --libs)
-        if test "XC:/Program Files/millicast-native-sdk/lib" != "X/usr/lib" -a "XC:/Program Files/millicast-native-sdk/lib" != "X/usr/lib64"; then
-           CURLLIBDIR="-LC:/Program Files/millicast-native-sdk/lib "
+        if test "XD:/csmMillicastNativeSdk-108-Rel-H264-build/install_dir/lib" != "X/usr/lib" -a "XD:/csmMillicastNativeSdk-108-Rel-H264-build/install_dir/lib" != "X/usr/lib64"; then
+           CURLLIBDIR="-LD:/csmMillicastNativeSdk-108-Rel-H264-build/install_dir/lib "
         else
            CURLLIBDIR=""
         fi
         if test "Xno" = "Xno"; then
-          echo ${CURLLIBDIR}-lcurl  -lwinmm -lws2_32 C:/Dashboards/OpenSSL/lib/libssl.lib C:/Dashboards/OpenSSL/lib/libcrypto.lib -ladvapi32 -lcrypt32 -lbcrypt
+          echo ${CURLLIBDIR}-lcurl  -lwinmm -lws2_32 D:/libwebrtc-108-Rel-H264-build/install_dir/lib/ssl.lib D:/libwebrtc-108-Rel-H264-build/install_dir/lib/crypto.lib -ladvapi32 -lcrypt32 -lbcrypt
         else
           echo ${CURLLIBDIR}-lcurl
         fi
@@ -174,7 +174,7 @@ while test $# -gt 0; do
 
     --static-libs)
         if test "Xyes" != "Xno" ; then
-          echo "C:/Program Files/millicast-native-sdk/lib/libcurl.lib" /machine:x64  -lwinmm -lws2_32 C:/Dashboards/OpenSSL/lib/libssl.lib C:/Dashboards/OpenSSL/lib/libcrypto.lib -ladvapi32 -lcrypt32 -lbcrypt
+          echo "D:/csmMillicastNativeSdk-108-Rel-H264-build/install_dir/lib/libcurl.lib" /machine:x64  -lwinmm -lws2_32 D:/libwebrtc-108-Rel-H264-build/install_dir/lib/ssl.lib D:/libwebrtc-108-Rel-H264-build/install_dir/lib/crypto.lib -ladvapi32 -lcrypt32 -lbcrypt
         else
           echo "curl was built with static libraries disabled" >&2
           exit 1

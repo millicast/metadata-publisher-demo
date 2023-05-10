@@ -25,9 +25,9 @@
 # This should most probably benefit from getting a "Requires:" field added
 # dynamically by configure.
 #
-prefix=C:/Program Files/millicast-native-sdk
+prefix=D:/csmMillicastNativeSdk-108-Rel-H264-build/install_dir
 exec_prefix=${prefix}
-libdir=C:/Program Files/millicast-native-sdk/lib
+libdir=D:/csmMillicastNativeSdk-108-Rel-H264-build/install_dir/lib
 includedir=${prefix}/include
 supported_protocols="DICT FILE FTP FTPS GOPHER GOPHERS HTTP HTTPS IMAP IMAPS MQTT POP3 POP3S RTSP SMB SMBS SMTP SMTPS TELNET TFTP"
 supported_features="SSL IPv6 unixsockets AsynchDNS Largefile alt-svc HSTS NTLM HTTPS-proxy threadsafe"
@@ -36,6 +36,6 @@ Name: libcurl
 URL: https://curl.se/
 Description: Library to transfer files with ftp, http, etc.
 Version: 8.0.0-DEV
-Libs: -L${libdir} -lcurl  -lwinmm -lws2_32 C:/Dashboards/OpenSSL/lib/libssl.lib C:/Dashboards/OpenSSL/lib/libcrypto.lib -ladvapi32 -lcrypt32 -lbcrypt
-Libs.private:  -lwinmm -lws2_32 C:/Dashboards/OpenSSL/lib/libssl.lib C:/Dashboards/OpenSSL/lib/libcrypto.lib -ladvapi32 -lcrypt32 -lbcrypt
+Libs: -L${libdir} -lcurl  -lwinmm -lws2_32 D:/libwebrtc-108-Rel-H264-build/install_dir/lib/ssl.lib D:/libwebrtc-108-Rel-H264-build/install_dir/lib/crypto.lib -ladvapi32 -lcrypt32 -lbcrypt
+Libs.private:  -lwinmm -lws2_32 D:/libwebrtc-108-Rel-H264-build/install_dir/lib/ssl.lib D:/libwebrtc-108-Rel-H264-build/install_dir/lib/crypto.lib -ladvapi32 -lcrypt32 -lbcrypt
 Cflags: -I${includedir} 

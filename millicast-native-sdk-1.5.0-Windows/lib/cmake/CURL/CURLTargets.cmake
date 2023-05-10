@@ -61,7 +61,7 @@ add_library(CURL::libcurl STATIC IMPORTED)
 set_target_properties(CURL::libcurl PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "CURL_STATICLIB"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
-  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:winmm>;\$<LINK_ONLY:ws2_32>;\$<LINK_ONLY:OpenSSL::SSL>;\$<LINK_ONLY:OpenSSL::Crypto>;\$<LINK_ONLY:advapi32>;\$<LINK_ONLY:crypt32>;\$<LINK_ONLY:bcrypt>"
+  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:winmm>;\$<LINK_ONLY:ws2_32>;D:/libwebrtc-108-Rel-H264-build/install_dir/lib/ssl.lib;D:/libwebrtc-108-Rel-H264-build/install_dir/lib/crypto.lib;\$<LINK_ONLY:advapi32>;\$<LINK_ONLY:crypt32>;\$<LINK_ONLY:bcrypt>"
 )
 
 if(CMAKE_VERSION VERSION_LESS 2.8.12)
